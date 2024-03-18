@@ -24,6 +24,7 @@ p, h1, h2, h3, h4 {
 }
 
 .container {
+    height: 100vh;
     display: grid;
 
     grid-template-columns: 1fr 2fr 1fr;
@@ -73,6 +74,20 @@ p, h1, h2, h3, h4 {
 
 .main-btns {
     padding-top: 2rem;
+}
+
+.dashboard-header {
+    padding-left: 0.6rem;
+    padding-top: 0.5rem;
+}
+
+.main-btns, .side-btns {
+    padding-left: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
 }
 
 .main-btns div, .side-btns div {
