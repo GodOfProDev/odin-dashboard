@@ -187,15 +187,34 @@ p, h1, h2, h3, h4 {
 }
 
 .header-btns button {
-    width: 75px;
-    padding: 1em;
+    width: 100px;
+    padding: 0.5em;
+    font-size: 1rem;
+
+    background-color: var(--clr-cyan-500);
+    color: var(--clr-netrual-200);
+
+    border-radius: 100px;
+
+    box-shadow: none;
 }
 
 .header__bottom {
     display: flex;
 
     padding-inline: 2rem;
+    padding-bottom: 0.5rem;
 
     justify-content: space-between;
     align-items: center;
+}
+
+.greeting-text p {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.greeting-text h3 {
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
