@@ -350,3 +350,12 @@ p, h1, h2, h3, h4, a {
 
     gap: 0.5rem;
 }
+
+input {
+    border: none;
+    outline: none;
+
+    padding: 0.3rem;
+
+    font-size: 1rem;
+}
