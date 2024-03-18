@@ -28,7 +28,7 @@ p, h1, h2, h3, h4 {
     height: 100vh;
     display: grid;
 
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 0.8fr 2fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
 
     grid-template-areas:
@@ -217,4 +217,57 @@ p, h1, h2, h3, h4 {
 .greeting-text h3 {
     font-weight: bolder;
     font-size: 1.5rem;
+}
+
+.announcement, .trending{
+    padding-top: 1rem;
+}
+
+.announcement h4, .trending h4 {
+    font-size: 1.4rem;
+
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.announcement-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    border-radius: 15px;
+
+    padding-block: 2rem;
+    padding-inline: 2rem;
+
+    background-color: var(--clr-netrual-200);
+}
+
+.announce-header {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.trending-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    clip-path: circle();
+
+    background-color: var(--clr-cyan-500);
+}
+
+.trending-card {
+    display: flex;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.trending-header {
+    font-weight: bold;
 }
