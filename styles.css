@@ -159,7 +159,7 @@ p, h1, h2, h3, h4 {
     gap: 2rem;
 }
 
-.header__top, .header__bottom {
+.header__top {
     padding: 2rem;
 }
 
@@ -167,6 +167,35 @@ p, h1, h2, h3, h4 {
     width: 100%;
 
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.greeting-profile {
+    width: 64px;
+    height: 64px;
+
+    clip-path: circle();
+
+    background-color: #facc15;
+}
+
+.greeting {
+    display: flex;
+
+    gap: 1rem;
+}
+
+.header-btns button {
+    width: 75px;
+    padding: 1em;
+}
+
+.header__bottom {
+    display: flex;
+
+    padding-inline: 2rem;
+
     justify-content: space-between;
     align-items: center;
 }
