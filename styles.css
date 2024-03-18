@@ -12,3 +12,85 @@
     box-sizing: border-box;
 }
 
+:root {
+    --clr-cyan-500: #06b6d4;
+    --clr-netrual-200: #f5f5f5;
+}
+
+p, h1, h2, h3, h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+
+    grid-template-areas:
+            "sidebar header header"
+            "sidebar project announcement"
+            "sidebar project trending"
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.project {
+    grid-area: project;
+}
+
+.announcement {
+    grid-area: announcement;
+}
+
+.trending {
+    grid-area: trending;
+}
+
+.sidebar {
+    background-color: var(--clr-cyan-500);
+}
+
+.sidebar p {
+    color: var(--clr-netrual-200);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.sidebar-btns {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 3rem;
+}
+
+.main-btns {
+    padding-top: 2rem;
+}
+
+.main-btns div, .side-btns div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--clr-netrual-200);
+    text-align: center;
+}
+
+.dashboard-header {
+    display: flex;
+    gap: 20px;
+
+    align-items: center;
+}
