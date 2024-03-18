@@ -130,6 +130,8 @@ p, h1, h2, h3, h4, a {
     width: 400px;
     height: 25px;
 
+    padding: 1rem;
+
     border-radius: 10px;
 }
 
@@ -200,6 +202,10 @@ p, h1, h2, h3, h4, a {
     box-shadow: none;
 }
 
+.header-btns button:hover {
+    cursor: pointer;
+}
+
 .header__bottom {
     display: flex;
 
@@ -222,6 +228,8 @@ p, h1, h2, h3, h4, a {
 
 .announcement, .trending{
     padding-top: 1rem;
+
+    padding-right: 1rem;
 }
 
 .announcement h4, .trending h4 {
